@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+ void searchel(int arr[], int N, int k)
+ {
+     for(int i=0; i<N; i++)
+     {
+         if(arr[i]==k){
+             cout<<"Element Found";
+             cout<<" at "<<i;
+             return;
+         }
+     }
+             cout<<"element not found.Sorry:(";
+         
+     
+ }
+ int main()
+ {
+     int arr[]={1,2,2,3,4};
+     int N= sizeof(arr)/sizeof(arr[0]);
+     int k;
+     cout<<" enter the number to find:";
+     cin >> k;
+     searchel(arr,N, k);
+     return 0;
+ }
